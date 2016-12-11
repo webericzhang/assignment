@@ -1,4 +1,2 @@
-mybatis-spring-angular
-======================
+mysql-mybatis-spring-springMVC-angularJS-CRUD
 
-An application to demonstrate the use of MyBatis, Spring MVC and AngularJS
