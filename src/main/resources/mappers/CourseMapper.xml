@@ -44,11 +44,12 @@
         (#{title}, #{level}, #{hoursLong}, #{active}, #{teacher.idTeacher})
     </insert>
     
-    <insert id="update" parameterType="es.rchavarria.library.core.domain.DetailedCourse">
-        INSERT INTO courses
-        (title, level, hoursLong, active, idTeacher)
-        VALUES
-        (#{title}, #{level}, #{hoursLong}, #{active}, #{teacher.idTeacher})
-    </insert>
+    <delete id="delete" parameterType="es.rchavarria.library.core.domain.DetailedCourse">  
+        delete from courses  
+    </delete> 
+    
+    <update id="update" parameterType="es.rchavarria.library.core.domain.DetailedCourse">  
+        update courses set title = #{title}, level = #{level}, hoursLong = #{hoursLong}, active = #{active}  
+    </update>  
 
 </mapper>

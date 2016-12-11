@@ -12,5 +12,7 @@ public interface CourseMapper {
 
     public void save(DetailedCourse course);
     
+    public void delete(DetailedCourse course);
+    
     public void update(DetailedCourse course);
 }
