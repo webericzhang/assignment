@@ -81,7 +81,7 @@
         $scope.levels = LevelServiceResource.query();        
         $scope.save = function () {
             var newCourse = new CourseServiceResource($scope.course);
-            newCourse.$delete(function () {
+            newCourse.$save(function () {
                 $location.url("/");
             });
         };
